@@ -31,7 +31,11 @@ public class ContoBancario {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		ContoBancario conto101 =new ContoBancario(101);
+		
+		System.out.println("il saldo iniziale del conto numero" + conto101.getNumber() + "è di")
+		
+		
 	}
 
 }
