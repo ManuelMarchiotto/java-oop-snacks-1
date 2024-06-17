@@ -28,13 +28,18 @@ public class ContoBancario {
 		}		
 	}
 	
+	int getNumber() {
+		return this.numeroConto;
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ContoBancario conto101 =new ContoBancario(101);
+		ContoBancario conto = new ContoBancario(101);
 		
-		System.out.println("il saldo iniziale del conto numero" + conto101.getNumber() + "è di")
-		
+		System.out.println("il saldo iniziale del conto numero" + conto.getNumber() + " è di:" + conto.getsSaldo() +"€" + "\n");
+		conto.deposita(100);
+		conto.preleva(90);
+		System.out.println("il saldo iniziale del conto numero" + conto.getNumber() +  "è di:" + conto.getsSaldo() +"€" + "\n");
 		
 	}
 
